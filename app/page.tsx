@@ -23,15 +23,12 @@ export default function HomePage() {
               </div>
 
               <h1 className="text-5xl md:text-6xl font-display font-900 leading-tight mb-6">
-                உங்கள் பாதுகாப்பு<br />
-
-                <span className="text-blue-400">எங்கள் முன்னுரிமை</span>
-              
+                Your Security<br />
+                <span className="text-blue-400">Our Priority</span>
               </h1>
               
               <p className="text-lg text-slate-300 mb-4 leading-relaxed">
-              
-                <strong className="text-white">Your Security, Our Priority</strong>
+                <strong className="text-white">Advanced Protection for Your Peace of Mind</strong>
               </p>
               <p className="text-slate-400 mb-8 leading-relaxed">
                 Advanced CCTV, security systems & IT solutions for homes and businesses across Tamil Nadu. 
@@ -115,7 +112,7 @@ export default function HomePage() {
               Complete <span className="gradient-text">Security & IT</span> Solutions
             </h2>
             <p className="text-slate-500 max-w-xl mx-auto">
-              CCTV நிறுவல் முதல் மொபைல் App வரை — அனைத்து தொழில்நுட்ப தேவைகளும் ஒரே இடத்தில்.
+              From CCTV installations to Mobile Apps — all your technology needs in one place.
             </p>
           </div>
 
@@ -125,8 +122,7 @@ export default function HomePage() {
                 className="group bg-white border border-slate-100 rounded-2xl p-6 card-hover hover:border-primary-500/30">
                 <div className="text-4xl mb-4">{service.icon}</div>
                 <h3 className="text-lg font-700 text-slate-900 mb-1 group-hover:text-primary-500 transition-colors">{service.name}</h3>
-                <p className="text-xs text-slate-400 mb-3">{service.nameTa}</p>
-                <p className="text-sm text-slate-500 leading-relaxed mb-4">{service.shortDesc}</p>
+                <p className="text-sm text-slate-500 leading-relaxed mb-4 mt-2">{service.shortDesc}</p>
                 <div className="flex items-center justify-between">
                   <span className="text-xs font-600 text-primary-500">Starting {service.startingPrice}</span>
                   <ArrowRight size={16} className="text-slate-300 group-hover:text-primary-500 group-hover:translate-x-1 transition-all" />
@@ -158,18 +154,16 @@ export default function HomePage() {
             </div>
             <div>
               <div className="inline-flex items-center gap-2 bg-blue-50 text-primary-500 text-xs font-700 uppercase tracking-wider px-4 py-1.5 rounded-full mb-4">
-                About Us / எங்களைப் பற்றி
+                About Us
               </div>
               <h2 className="text-4xl font-display font-800 text-slate-900 mb-4">
                 Tamil Nadu's <span className="gradient-text">Most Trusted</span> Security Partner
               </h2>
               <p className="text-slate-500 leading-relaxed mb-4">
-                2012 ஆம் ஆண்டில் நிறுவப்பட்ட Spark Info Tech Solutions, தமிழ்நாடு முழுவதும் 
-                உள்ள வீடுகள் மற்றும் வணிக நிறுவனங்களுக்கு உயர்தர பாதுகாப்பு மற்றும் IT தீர்வுகளை வழங்குகிறது.
+                Established in 2012, Spark Info Tech Solutions provides high-quality security and IT solutions to homes and commercial businesses across Tamil Nadu.
               </p>
               <p className="text-slate-500 leading-relaxed mb-6">
-                Founded in 2012, we deliver end-to-end security and IT solutions across Tamil Nadu 
-                with certified technicians, premium products and 24/7 support.
+                We deliver end-to-end solutions with certified technicians, premium products, and comprehensive 24/7 support.
               </p>
               <div className="grid grid-cols-2 gap-3 mb-8">
                 {['Certified Technicians', '24/7 Support', '1-Year Warranty', 'Free Site Survey', 'AMC Plans', '10+ Cities Covered'].map(f => (
@@ -210,7 +204,7 @@ export default function HomePage() {
         <div className="container">
           <div className="text-center mb-12">
             <div className="inline-flex items-center gap-2 bg-yellow-50 text-yellow-600 text-xs font-700 uppercase tracking-wider px-4 py-1.5 rounded-full mb-4">
-              Customer Reviews / வாடிக்கையாளர் மதிப்புரைகள்
+              Customer Reviews
             </div>
             <h2 className="text-4xl font-display font-800 text-slate-900">
               What Our <span className="gradient-text">Clients Say</span>
@@ -250,7 +244,7 @@ export default function HomePage() {
             Ready to Secure Your <span className="text-blue-400">Property?</span>
           </h2>
           <p className="text-slate-300 mb-8 text-lg">
-            இன்றே தொடர்பு கொள்ளுங்கள் — இலவச தளப் பரிசோதனை மற்றும் மேற்கோள்!
+            Contact us today — for a free site survey and quote!
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
             <a href="tel:+911234567880" className="flex items-center gap-2 bg-white text-primary-500 font-700 px-8 py-4 rounded-xl hover:bg-blue-50 transition-all hover:-translate-y-0.5">
