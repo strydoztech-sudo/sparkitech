@@ -1,15 +1,23 @@
 import Link from 'next/link'
 import { Phone, Shield, Star, CheckCircle, ArrowRight, Play, Award, Users, Clock, MapPin } from 'lucide-react'
 import { services } from '@/lib/services'
+import Image from "next/image";
+
 
 export default function HomePage() {
   return (
     <>
       {/* ── HERO ─────────────────────────────────────────── */}
-      <section className="relative bg-gradient-to-br from-slate-900 via-slate-800 to-blue-950 text-white overflow-hidden min-h-[88vh] flex items-center">
+      <section className="relative mt-10 mb-10 via-slate-800 to-blue-950 text-blue overflow-hidden min-h-[88vh] flex items-center">
         {/* Background grid */}
         <div className="absolute inset-0 opacity-10"
-          style={{ backgroundImage: 'radial-gradient(circle, #0057FF 1px, transparent 1px)', backgroundSize: '40px 40px' }} />
+          style={{
+
+  backgroundSize: "cover",
+  backgroundPosition: "center",
+}} />
+
+          
         {/* Glow */}
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-blue-500 rounded-full opacity-5 blur-3xl pointer-events-none" />
 
@@ -27,8 +35,8 @@ export default function HomePage() {
                 <span className="text-blue-400">Our Priority</span>
               </h1>
               
-              <p className="text-lg text-slate-300 mb-4 leading-relaxed">
-                <strong className="text-white">Advanced Protection for Your Peace of Mind</strong>
+              <p className="text-lg text-slate-500 mb-4 leading-relaxed">
+                <strong className="text-blue">Advanced Protection for Your Peace of Mind</strong>
               </p>
               <p className="text-slate-400 mb-8 leading-relaxed">
                 Advanced CCTV, security systems & IT solutions for homes and businesses across Tamil Nadu. 
@@ -39,7 +47,7 @@ export default function HomePage() {
                 <Link href="/contact" className="flex items-center gap-2 bg-primary-500 hover:bg-primary-600 text-white font-600 px-7 py-3.5 rounded-xl transition-all hover:-translate-y-0.5 hover:shadow-xl hover:shadow-blue-500/30">
                   <Shield size={18} /> Get Free Quote
                 </Link>
-                <Link href="/estimate" className="flex items-center gap-2 border border-slate-600 hover:border-white text-white font-600 px-7 py-3.5 rounded-xl transition-all hover:bg-white/5">
+                <Link href="/estimate" className="flex items-center gap-2 border border-slate-600 hover:border-white text-blue font-600 px-7 py-3.5 rounded-xl transition-all hover:bg-white/5">
                   <Play size={16} /> Try Estimate Tool
                 </Link>
               </div>
@@ -52,7 +60,7 @@ export default function HomePage() {
                   { num: '24/7', label: 'Support' },
                 ].map(s => (
                   <div key={s.label}>
-                    <div className="text-3xl font-display font-800 text-white">{s.num}</div>
+                    <div className="text-3xl font-display font-800 text-[#0057FF]">{s.num}</div>
                     <div className="text-xs text-slate-400 mt-1">{s.label}</div>
                   </div>
                 ))}
@@ -60,23 +68,26 @@ export default function HomePage() {
             </div>
 
             {/* Hero visual */}
-            <div className="hidden md:block">
+       
+    
+            <div className="hidden md:block mt-6">
               <div className="relative">
-                <div className="bg-slate-800/60 border border-slate-700 rounded-3xl p-8 backdrop-blur-sm">
-                  <div className="text-6xl text-center mb-4">📷</div>
-                  <div className="space-y-3">
-                    {['HD CCTV Cameras', 'Security Gates & Doors', 'Web & App Development', 'Billing Software', 'Intercom Systems'].map(item => (
-                      <div key={item} className="flex items-center gap-3 bg-slate-700/40 rounded-xl px-4 py-2.5">
-                        <CheckCircle size={16} className="text-green-400 flex-shrink-0" />
-                        <span className="text-sm text-slate-200">{item}</span>
-                      </div>
-                    ))}
-                  </div>
-                  <div className="mt-6 p-4 bg-primary-500/10 border border-primary-500/20 rounded-xl text-center">
-                    <p className="text-primary-300 text-sm font-600">🎯 Free Site Survey Available</p>
-                    <p className="text-slate-400 text-xs mt-1">Coimbatore & Tamil Nadu</p>
-                  </div>
+                
+               
+                <div className=" rounded-3xl p-8 backdrop-blur-sm">
+            
+            
+            <Image
+  src="/images/cctv_camera.png"
+  alt="CCTV Camera"
+  width={700}
+  height={700}
+/>
+
                 </div>
+
+
+
                 {/* Floating badges */}
                 <div className="absolute -top-4 -right-4 bg-green-500 text-white text-xs font-700 px-3 py-1.5 rounded-full shadow-lg">
                   ✓ 1 Year Warranty
@@ -91,6 +102,8 @@ export default function HomePage() {
       </section>
 
       {/* ── FEATURES STRIP ───────────────────────────────── */}
+
+
       <section className="bg-primary-500 py-4">
         <div className="container">
           <div className="flex flex-wrap justify-center md:justify-between gap-4 text-white text-sm font-500">
@@ -136,23 +149,34 @@ export default function HomePage() {
       {/* ── ABOUT TEASER ─────────────────────────────────── */}
       <section className="section-pad bg-slate-50">
         <div className="container">
+      
           <div className="grid md:grid-cols-2 gap-16 items-center">
             <div>
+        
+        
               <div className="bg-gradient-to-br from-slate-900 to-blue-900 rounded-3xl h-96 flex items-center justify-center relative overflow-hidden">
-                <div className="text-9xl opacity-20">🔒</div>
+                <div className="text-9xl opacity-20"></div>
                 <div className="absolute inset-0 flex items-center justify-center">
                   <div className="text-center text-white">
-                    <div className="text-6xl mb-3">🛡️</div>
-                    <p className="font-display font-700 text-xl">Trusted by</p>
-                    <p className="text-5xl font-display font-900 text-blue-300">5000+</p>
-                    <p className="text-slate-300">Happy Clients</p>
+                    
+                    <Image
+  src="/images/spark_cctv_aboutus.jpg"
+  alt="CCTV Camera"
+  width={700}
+  height={700}
+/>
+                    
                   </div>
                 </div>
                 <div className="absolute top-4 left-4 bg-primary-500 text-white text-xs font-700 px-3 py-1 rounded-full">Since 2012</div>
                 <div className="absolute bottom-4 right-4 bg-green-500 text-white text-xs font-700 px-3 py-1 rounded-full">10+ Cities</div>
               </div>
+
+
             </div>
             <div>
+      
+      
               <div className="inline-flex items-center gap-2 bg-blue-50 text-primary-500 text-xs font-700 uppercase tracking-wider px-4 py-1.5 rounded-full mb-4">
                 About Us
               </div>
@@ -247,8 +271,8 @@ export default function HomePage() {
             Contact us today — for a free site survey and quote!
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <a href="tel:+911234567880" className="flex items-center gap-2 bg-white text-primary-500 font-700 px-8 py-4 rounded-xl hover:bg-blue-50 transition-all hover:-translate-y-0.5">
-              <Phone size={18} /> Call: +91 12345 67880
+            <a href="tel:+919444530951" className="flex items-center gap-2 bg-white text-primary-500 font-700 px-8 py-4 rounded-xl hover:bg-blue-50 transition-all hover:-translate-y-0.5">
+              <Phone size={18} /> Call: +91 91 94445 30951
             </a>
             <Link href="/contact" className="flex items-center gap-2 border border-slate-600 hover:border-white text-white font-600 px-8 py-4 rounded-xl transition-all hover:bg-white/5">
               Send Message <ArrowRight size={16} />
