@@ -4,7 +4,7 @@ import { services } from '@/lib/services'
 
 export default function Footer() {
   return (
-    <footer className="bg-slate-900 text-slate-300">
+    <footer className="bg-slate-900 text-slate-300 mt-15">
       <div className="container py-16">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-10">
 
