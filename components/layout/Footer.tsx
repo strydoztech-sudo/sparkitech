@@ -68,7 +68,8 @@ export default function Footer() {
               <li className="flex gap-3">
                 <Phone size={15} className="text-primary-500 mt-0.5 flex-shrink-0" />
                 <div>
-                  <a href="tel:+911234567880" className="text-sm text-slate-300 hover:text-white transition-colors block">+91 12345 67880</a>
+                  <a href="tel:+9194445 30951" className="text-sm text-slate-300 hover:text-white transition-colors block">
+                    94445 30951</a>
                   <span className="text-xs text-slate-500">24/7 Support</span>
                 </div>
               </li>
@@ -78,7 +79,7 @@ export default function Footer() {
               </li>
               <li className="flex gap-3">
                 <MapPin size={15} className="text-primary-500 mt-0.5 flex-shrink-0" />
-                <span className="text-sm text-slate-400">Coimbatore, Tamil Nadu<br />We serve all major cities</span>
+                <span className="text-sm text-slate-400"> Poonamallee, Chennai<br />We serve all major cities</span>
               </li>
             </ul>
             {/* Newsletter */}

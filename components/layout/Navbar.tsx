@@ -21,8 +21,8 @@ export default function Navbar() {
       <div className="bg-slate-900 text-slate-300 text-xs py-2 hidden md:block">
         <div className="container flex justify-between items-center">
           <div className="flex gap-6">
-            <a href="tel:+911234567880" className="flex items-center gap-1.5 hover:text-white transition-colors">
-              <Phone size={12} /> +91 12345 67880
+            <a href="tel:+91 94445 30951" className="flex items-center gap-1.5 hover:text-white transition-colors">
+              <Phone size={12} /> +91 94445 30951
             </a>
             <a href="mailto:info@sparkitech.space" className="hover:text-white transition-colors">
               info@sparkitech.space
@@ -31,7 +31,7 @@ export default function Navbar() {
           <div className="flex gap-4 text-xs">
             <span>Mon–Sun: 24/7 Support</span>
             <span>|</span>
-            <span>Coimbatore, Tamil Nadu</span>
+            <span> Poonamallee, Chennai</span>
           </div>
         </div>
       </div>
@@ -81,8 +81,8 @@ export default function Navbar() {
 
             {/* CTA */}
             <div className="hidden md:flex items-center gap-3">
-              <a href="tel:+911234567880" className="flex items-center gap-2 text-sm font-600 text-primary-500">
-                <Phone size={15} /> +91 12345 67880
+              <a href="tel:+91 9444530951" className="flex items-center gap-2 text-sm font-600 text-primary-500">
+                <Phone size={15} /> +9194445 30951
               </a>
               <Link href="/contact" className="bg-primary-500 hover:bg-primary-600 text-white text-sm font-600 px-5 py-2.5 rounded-lg transition-all hover:-translate-y-0.5 hover:shadow-lg hover:shadow-blue-200">
                 Get A Quote

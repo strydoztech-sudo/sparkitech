@@ -68,11 +68,11 @@ export default function EstimatePage() {
                 <li className="flex items-center gap-2">✅ Response within 2 hours</li>
               </ul>
               <div className="space-y-3">
-                <a href="tel:+911234567880"
+                <a href="tel:+9194445 30951"
                   className="flex items-center justify-center gap-2 bg-slate-900 hover:bg-slate-800 text-white font-600 px-8 py-4 rounded-xl transition-all">
-                  <Phone size={16} /> +91 12345 67880
+                  <Phone size={16} /> +9194445 30951
                 </a>
-                <a href="https://wa.me/911234567880?text=Hi, I need a quote for security services"
+                <a href="https://wa.me/919444530951?text=Hi, I need a quote for security services"
                   target="_blank"
                   className="flex items-center justify-center gap-2 bg-green-500 hover:bg-green-600 text-white font-600 px-8 py-4 rounded-xl transition-all">
                   💬 WhatsApp Us
