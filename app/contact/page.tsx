@@ -67,7 +67,8 @@ export default function ContactPage() {
                     </div>
                     <div>
                       <p className="text-xs text-slate-400 font-600 uppercase tracking-wider mb-1">Phone</p>
-                      <a href="tel:+911234567880" className="text-white font-600 hover:text-blue-400 transition-colors">+91 12345 67880</a>
+                      <a href="tel:+919444530951" className="text-white font-600 hover:text-blue-400 transition-colors">
+                        +919444530951</a>
                     </div>
                   </div>
                   <div className="flex gap-4">
@@ -85,7 +86,7 @@ export default function ContactPage() {
                     </div>
                     <div>
                       <p className="text-xs text-slate-400 font-600 uppercase tracking-wider mb-1">Location</p>
-                      <p className="text-white">Coimbatore, Tamil Nadu</p>
+                      <p className="text-white"> Poonamallee, Chennai</p>
                       <p className="text-slate-400 text-sm">We serve all major cities</p>
                     </div>
                   </div>
