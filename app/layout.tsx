@@ -30,7 +30,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Navbar />
         <main>{children}</main>
         <Footer />
-        <WhatsAppFloat phone="911234567880" />
+        <WhatsAppFloat phone="+919444530951" />
       </body>
     </html>
   )
