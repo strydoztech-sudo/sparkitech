@@ -195,15 +195,20 @@ export default function ContactPage() {
       <section className="bg-slate-100 py-10">
         <div className="container">
           <div className="bg-slate-200 rounded-2xl h-64 flex items-center justify-center">
-            <div className="text-center text-slate-500">
-              <MapPin size={40} className="mx-auto mb-3 text-primary-500" />
-              <p className="font-600 text-slate-700">Coimbatore, Tamil Nadu</p>
-              <p className="text-sm">Serving all major cities across Tamil Nadu</p>
-              <a href="https://maps.google.com/?q=Coimbatore+Tamil+Nadu" target="_blank"
-                className="mt-3 inline-block text-primary-500 text-sm font-600 hover:underline">
-                View on Google Maps →
-              </a>
-            </div>
+           
+             
+             
+            <iframe
+  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d995023.4559885745!2d78.98119223124999!3d13.047738999999993!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a52614a241f669d%3A0x2a7d0afbf76b646d!2sSpark%20CCTV%20camera%20installation%20and%20services!5e0!3m2!1sen!2sin!4v1777600837169!5m2!1sen!2sin"
+  width="100%"
+  height="300"
+  style={{ border: 0 }}
+  allowFullScreen
+  loading="lazy"
+  referrerPolicy="no-referrer-when-downgrade"
+  className="rounded-2xl mt-4"
+/>
+    
           </div>
         </div>
       </section>
